@@ -34,7 +34,7 @@ height: auto;
 
 .container{
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -112,13 +112,14 @@ border: 0px;
 
 }
 
- .hr{
+ .hr-header{
   position: static;
   width: 153px;
   height: 0px;
     border: 1px solid #333333;
   /* transform: rotate(0.16deg); */
   margin: 6px 0px;
+  background-color: #000;
 }
 
 
@@ -197,9 +198,141 @@ border:none;
 margin: 30px 0px;
 }
 .watch-red {
+  width: 390px;
+height: 565px;
+margin-top: 85px;
+margin-right: -140px;
+  background-image: url(../img/watch-red.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .watch-red-img {
   width: 587px;
   margin-left: 245px;
   /* height: 565px; */
+}
+
+.hr{
+  width: 1250px;
+    border: 2px solid #DDDDDD;
+    margin: 0px;
+    padding: 0px;
+    margin-left: -110px;
+    color: #000;
+    background-color: #000;
+}
+
+.main-card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizantal-card:not(:last-child){
+  margin-right: 80px;
+}
+.card-heading {
+  width: 280px;
+height: 27px;
+font-weight: bold;
+font-size: 18px;
+line-height: 150%;
+text-transform: uppercase;
+color: #222222;
+margin: 68px 0px 30px;
+}
+
+.card-text {
+  width: 280px;
+flex-grow: 1;
+font-weight: normal;
+font-size: 15px;
+line-height: 160%;
+color: #333333;
+margin: 0px;
+padding-bottom: 20px;
+}
+
+.card-footer-img {
+}
+.horizantal-card {
+  width: 280px;
+}
+.card-link {
+  width: 99px;
+height: 26px;
+font-weight: bold;
+font-size: 16px;
+line-height: 160%;
+text-transform: uppercase;
+text-decoration: none;
+color: #EA625C;
+padding-left: 40px;
+margin: 0px 10px;
+}
+
+.card-link-line{
+  background-image: url(../img/Line\ 3.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+/* Main-middle */
+.main-middle-heading{
+  width: 380px;
+  height: 180px;
+  margin-top: 246px;
+
+
+}
+
+.main-middle-text{
+  width: 450px;
+  height: 96px;
+
+}
+
+.watch-in-hend{
+
+
+}
+
+.watch-in-hend-img{
+  width: 400px;
+  height: 600px;
+  margin: 0;
+  margin-top: 140px;
+  margin-left: 110px;
+}
+
+.main-aside {
+
+  width: 1250px;
+  height: 830.19px;
+  margin-top: 70px;
+  background-image: url(../img/Mountain-climbing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-aside-box{
+  width: 490px;
+  padding-top: 240px;
+  padding-left: 510px;
+
+}
+
+.main-footer-heading {
+  width: 490px;
+  height: 120px;
+  color:#fff;
+}
+
+.main-footer-text {
+  width: 450px;
+  height: 120px;
+  color: #fff;
+  border-color: #fff;
 }

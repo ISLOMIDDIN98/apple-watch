@@ -1,3 +1,7 @@
+:root{
+  --premary: #EA625C;
+}
+
 html{
   box-sizing:border-box;
   height: 100%;
@@ -32,13 +36,50 @@ height: auto;
 
 }
 
+*:focus{
+  outline: 1px dashed #EA625C;
+  outline-offset: 2px;
+}
+
 .container{
   width: 100%;
-  max-width: 1100px;
+  max-width: 1350px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* BUTTON */
+
+.button{
+  display: flex;
+justify-content: center;
+align-items: center;
+width: 260px;
+padding: 12px 38px;
+bottom: 0;
+background-color:var(--premary);
+color: #fff;
+font-size: 18px;
+line-height: 1.5;
+font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+margin-top: 30px;
+transition: background-color 0.3s ease;
+}
+
+.button:hover{
+  background-color: #C9514C;
+}
+
+.button:active{
+  opacity: 0.6;
+}
+
+.button:focus{
+  outline: 1px dashed #000;
 }
 
 
@@ -55,7 +96,10 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 padding: 0px;
-  width: 1000px;
+  width: 1250px;
+  padding-top: 30px;
+  padding-left: 125px;
+  padding-right: 125px;
 
 }
 .apple-icon {
@@ -77,6 +121,8 @@ margin-right: 40px;
 list-style: none;
 }
 
+
+
 .sitenav-item:not(:last-child){
   margin-right: 30px;
 }
@@ -84,19 +130,24 @@ list-style: none;
 }
 
 .sitenav-link{
+  display: block;
   font-family:"Roboto Condensed","Roboto","Bebas Neue","arial", serif, cursive;
   font-size: 15px;
   line-height: 1.5;
   line-height: 150%;
   color: #333333;
   text-decoration: none;
-
+padding-top: 6px;
+padding-bottom: 3px;
+border-bottom: 3px dashed transparent;
 }
-.search-form {
 
-
-
+.sitenav-link:hover{
+  border-bottom: 3px solid #333;
 }
+
+
+
 .search-form-text {
   width: 149px;
   height: 23px;
@@ -124,10 +175,6 @@ border: 0px;
 
 
 /* Main */
-.site-main {
-}
-.container {
-}
 
 .site-main-section{
   display: flex;
@@ -169,33 +216,9 @@ border-left:margin 40px;
 border-color:#888;
 }
 
- .main-button-div{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: static;
-  padding: 12px;
-   width: 260px;
-  height: 51px;
-  background-color: #EA625C;
-  margin: 30px 0px;
-}
-.main-button {
-  width: 183px;
-height: 27px;
-font-style: normal;
-font-weight: bold;
-position: static;
-font-size: 18px;
-line-height: 150%;
-text-align: center;
-text-transform: uppercase;
-background-color:#EA625C;
-color: #fff;
-border:none;
 
-margin: 30px 0px;
+.main-button:hover{
+  background-color: #C9514C;
 }
 .watch-red {
   width: 390px;
@@ -253,30 +276,45 @@ margin: 0px;
 padding-bottom: 20px;
 }
 
-.card-footer-img {
-}
+
 .horizantal-card {
   width: 280px;
 }
 .card-link {
-  width: 99px;
-height: 26px;
-font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+
+
 font-size: 16px;
-line-height: 160%;
+line-height: 1.6;
+font-weight: bold;
 text-transform: uppercase;
 text-decoration: none;
 color: #EA625C;
-padding-left: 40px;
-margin: 0px 10px;
+
 }
 
-.card-link-line{
-  background-image: url(../img/Line\ 3.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
+.card-link::before {
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: rgb(197, 31, 31);
+  content: "";
+  transition: width 0.3s ease;
 }
 
+.card-link:hover::before{
+  width: 60px;
+}
+
+.features-dvider{
+  width: 8px;
+  height: 8px;
+  border: 0;
+margin-left: 0;
+background-color: #ddd;
+box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
+}
 
 /* Main-middle */
 .main-middle-heading{
@@ -293,10 +331,6 @@ margin: 0px 10px;
 
 }
 
-.watch-in-hend{
-
-
-}
 
 .watch-in-hend-img{
   width: 400px;
